@@ -1,23 +1,22 @@
 default_language_version:
   python: python3
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.3.0
-    hooks:
-      - id: trailing-whitespace
-      - id: end-of-file-fixer
-      - id: debug-statements
-      - id: fix-encoding-pragma
-      - id: check-case-conflict
-      - id: check-docstring-first
-      - id: check-executables-have-shebangs
-      - id: check-merge-conflict
-      - id: check-xml
-      - id: mixed-line-ending
-        args: ["--fix=lf"]
-  - repo: https://github.com/Lucas-C/pre-commit-hooks-nodejs
-    rev: v1.1.2
-    hooks:
-      - id: markdown-toc
-        args: [--bullets=-, -i]
-        exclude: .github/
+    - repo: https://github.com/psf/black
+      rev: 23.12.1
+      hooks:
+        - id: black
+          args: [-h]
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.3.0
+      hooks:
+        - id: trailing-whitespace
+#        - id: end-of-file-fixer
+        - id: debug-statements
+        - id: fix-encoding-pragma
+        - id: check-case-conflict
+        - id: check-docstring-first
+        - id: check-executables-have-shebangs
+        - id: check-merge-conflict
+        - id: check-xml
+        - id: mixed-line-ending
+          args: [ "--fix=lf" ]
