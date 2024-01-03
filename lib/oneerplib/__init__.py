@@ -37,10 +37,10 @@ FILE_APT_BUILD = os.path.join(CUSTOM_DIR, "dependencies", "apt_build.txt")
 PRIVATE = "private"
 CORE = "odoo/addons"
 ENTERPRISE = "enterprise"
-PRIVATE_DIR = os.path.join(SRC_DIR, PRIVATE)
-CORE_DIR = os.path.join(SRC_DIR, CORE)
-ODOO_DIR = os.path.join(SRC_DIR, "odoo")
-ODOO_VERSION = os.environ["ODOO_VERSION"]
+PRIVATE_DIR = os.path.join(SRC_DIR, PRIVATE)#???????????
+CORE_DIR = os.path.join(SRC_DIR, CORE)#???????????
+ODOO_DIR = os.path.join(SRC_DIR, "odoo")#???????????
+ODOO_VERSION = os.environ["ODOO_VERSION"]#???????????
 MANIFESTS = ("__manifest__.py", "__openerp__.py")#???????????
 
 # Customize logging for build
