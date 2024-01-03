@@ -41,7 +41,7 @@ PRIVATE_DIR = os.path.join(SRC_DIR, PRIVATE)
 CORE_DIR = os.path.join(SRC_DIR, CORE)
 ODOO_DIR = os.path.join(SRC_DIR, "odoo")
 ODOO_VERSION = os.environ["ODOO_VERSION"]
-MANIFESTS = ("__manifest__.py", "__openerp__.py") #???????????
+MANIFESTS = ("__manifest__.py", "__openerp__.py")#???????????
 
 # Customize logging for build
 logger = logging.getLogger("oneerp")
