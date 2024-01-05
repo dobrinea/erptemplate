@@ -19,6 +19,5 @@ repos:
       rev: 23.12.1
       hooks:
         - id: black
-          args: ['--include', '"^.*\.(py)$"', '.']
           verbose: true
           language_version: python3.11
